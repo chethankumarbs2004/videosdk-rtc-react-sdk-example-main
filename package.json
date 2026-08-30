@@ -15,7 +15,7 @@
     "mongoose": "^9.9.4",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-loader": "^7.3.3",
-    "react": "^18.2.0",
+    "react": "^19.2.8",
     "react-dom": "^18.2.0",
     "react-player": "^2.13.0",
     "react-responsive": "^9.0.2",
