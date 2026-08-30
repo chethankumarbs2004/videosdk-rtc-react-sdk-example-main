@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/videosdk-rtc-react-sdk-example-main/static/css/main.116bb164.css",
+    "main.js": "/videosdk-rtc-react-sdk-example-main/static/js/main.abe6e364.js",
+    "reactPlayerYouTube.js": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerYouTube.67ad213b.chunk.js",
+    "reactPlayerSoundCloud.js": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerSoundCloud.6eb1326b.chunk.js",
+    "reactPlayerVimeo.js": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerVimeo.5d9d54b0.chunk.js",
+    "reactPlayerMux.js": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerMux.722b2d58.chunk.js",
+    "reactPlayerFacebook.js": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerFacebook.258d56b4.chunk.js",
+    "reactPlayerStreamable.js": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerStreamable.1a1c56f7.chunk.js",
+    "reactPlayerWistia.js": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerWistia.4d389215.chunk.js",
+    "reactPlayerTwitch.js": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerTwitch.dde5a25f.chunk.js",
+    "reactPlayerDailyMotion.js": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerDailyMotion.b4b8b4ad.chunk.js",
+    "reactPlayerMixcloud.js": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerMixcloud.c782c488.chunk.js",
+    "reactPlayerVidyard.js": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerVidyard.667c522c.chunk.js",
+    "reactPlayerKaltura.js": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerKaltura.d8cd07e7.chunk.js",
+    "reactPlayerFilePlayer.js": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerFilePlayer.4a0cf78c.chunk.js",
+    "reactPlayerPreview.js": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerPreview.0ebe6afd.chunk.js",
+    "static/media/test_sound.mp3": "/videosdk-rtc-react-sdk-example-main/static/media/test_sound.fe0214774487665bf1e9.mp3",
+    "index.html": "/videosdk-rtc-react-sdk-example-main/index.html",
+    "main.116bb164.css.map": "/videosdk-rtc-react-sdk-example-main/static/css/main.116bb164.css.map",
+    "main.abe6e364.js.map": "/videosdk-rtc-react-sdk-example-main/static/js/main.abe6e364.js.map",
+    "reactPlayerYouTube.67ad213b.chunk.js.map": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerYouTube.67ad213b.chunk.js.map",
+    "reactPlayerSoundCloud.6eb1326b.chunk.js.map": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerSoundCloud.6eb1326b.chunk.js.map",
+    "reactPlayerVimeo.5d9d54b0.chunk.js.map": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerVimeo.5d9d54b0.chunk.js.map",
+    "reactPlayerMux.722b2d58.chunk.js.map": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerMux.722b2d58.chunk.js.map",
+    "reactPlayerFacebook.258d56b4.chunk.js.map": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerFacebook.258d56b4.chunk.js.map",
+    "reactPlayerStreamable.1a1c56f7.chunk.js.map": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerStreamable.1a1c56f7.chunk.js.map",
+    "reactPlayerWistia.4d389215.chunk.js.map": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerWistia.4d389215.chunk.js.map",
+    "reactPlayerTwitch.dde5a25f.chunk.js.map": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerTwitch.dde5a25f.chunk.js.map",
+    "reactPlayerDailyMotion.b4b8b4ad.chunk.js.map": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerDailyMotion.b4b8b4ad.chunk.js.map",
+    "reactPlayerMixcloud.c782c488.chunk.js.map": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerMixcloud.c782c488.chunk.js.map",
+    "reactPlayerVidyard.667c522c.chunk.js.map": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerVidyard.667c522c.chunk.js.map",
+    "reactPlayerKaltura.d8cd07e7.chunk.js.map": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerKaltura.d8cd07e7.chunk.js.map",
+    "reactPlayerFilePlayer.4a0cf78c.chunk.js.map": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerFilePlayer.4a0cf78c.chunk.js.map",
+    "reactPlayerPreview.0ebe6afd.chunk.js.map": "/videosdk-rtc-react-sdk-example-main/static/js/reactPlayerPreview.0ebe6afd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.116bb164.css",
+    "static/js/main.abe6e364.js"
+  ]
+}
