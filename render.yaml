@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: videosdk-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node backend/server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGO_URI
+        sync: false
+      - key: REACT_APP_VIDEOSDK_TOKEN
+        sync: false
+      - key: REACT_APP_AUTH_URL
+        value: ""
+      - key: REACT_APP_API_BASE_URL
+        value: "https://videosdk-backend.onrender.com"
