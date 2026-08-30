@@ -1,6 +1,7 @@
 import { CheckIcon, ClipboardIcon } from "@heroicons/react/outline";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
+import { saveUserToMongo } from "../api";
 
 export function MeetingDetailsScreen({
   onClickJoin,
@@ -10,6 +11,7 @@ export function MeetingDetailsScreen({
   onClickStartMeeting,
 }) {
   const [meetingId, setMeetingId] = useState("");
+  const [email, setEmail] = useState("");
   const [meetingIdError, setMeetingIdError] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
   const [iscreateMeetingClicked, setIscreateMeetingClicked] = useState(false);
@@ -65,15 +67,45 @@ export function MeetingDetailsScreen({
             placeholder="Enter your name"
             className="px-4 py-3 mt-5 bg-gray-650 rounded-xl text-white w-full text-center"
           />
+          <input
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Enter your email"
+            type="email"
+            className="px-4 py-3 mt-3 bg-gray-650 rounded-xl text-white w-full text-center"
+          />
 
-          {/* <p className="text-xs text-white mt-1 text-center">
-            Your name will help everyone identify you in the meeting.
-          </p> */}
           <button
-            disabled={participantName.length < 3}
-            className={`w-full ${participantName.length < 3 ? "bg-gray-650" : "bg-purple-350"
+            disabled={participantName.length < 3 || !email.includes("@")}
+            className={`w-full ${participantName.length < 3 || !email.includes("@") ? "bg-gray-650" : "bg-purple-350"
               }  text-white px-2 py-3 rounded-xl mt-5`}
-            onClick={(e) => {
+            onClick={async (e) => {
+              const trimmedName = participantName.trim();
+              const trimmedEmail = email.trim();
+
+              if (!trimmedName || trimmedName.length < 3 || !trimmedEmail.includes("@")) {
+                return;
+              }
+
+              try {
+                await saveUserToMongo({
+                  name: trimmedName,
+                  email: trimmedEmail,
+                });
+              } catch (error) {
+                console.warn("Mongo save failed:", error.message);
+                toast(error.message, {
+                  position: "bottom-left",
+                  autoClose: 4000,
+                  hideProgressBar: true,
+                  closeButton: false,
+                  pauseOnHover: true,
+                  draggable: true,
+                  progress: undefined,
+                  theme: "light",
+                });
+              }
+
               if (iscreateMeetingClicked) {
                 onClickStartMeeting();
               } else {

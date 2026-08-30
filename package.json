@@ -8,7 +8,11 @@
     "@heroicons/react": "^1.0.6",
     "@popperjs/core": "^2.11.8",
     "@videosdk.live/react-sdk": "^0.1.98",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
     "lottie-react": "^2.4.0",
+    "mongoose": "^9.9.4",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-loader": "^7.3.3",
     "react": "^18.2.0",
@@ -33,7 +37,8 @@
     "kill-start": "sudo kill -9 `sudo lsof -t -i:3000` && yarn start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "node backend/server.js"
   },
   "eslintConfig": {
     "extends": [

@@ -1,6 +1,27 @@
-const API_BASE_URL = "https://api.videosdk.live";
+const VIDEO_API_BASE_URL = "https://api.videosdk.live";
+const MONGO_API_BASE_URL = process.env.REACT_APP_API_BASE_URL || "http://localhost:5000";
 const VIDEOSDK_TOKEN = process.env.REACT_APP_VIDEOSDK_TOKEN;
 const API_AUTH_URL = process.env.REACT_APP_AUTH_URL;
+
+export const saveUserToMongo = async ({ name, email }) => {
+  const response = await fetch(`${MONGO_API_BASE_URL}/api/users`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      name,
+      email,
+    }),
+  });
+
+  if (!response.ok) {
+    const errorData = await response.json().catch(() => ({}));
+    throw new Error(errorData.message || "Could not save user to MongoDB");
+  }
+
+  return response.json();
+};
 
 export const getToken = async () => {
   if (VIDEOSDK_TOKEN && API_AUTH_URL) {
@@ -21,7 +42,7 @@ export const getToken = async () => {
 };
 
 export const createMeeting = async ({ token }) => {
-  const url = `${API_BASE_URL}/v2/rooms`;
+  const url = `${VIDEO_API_BASE_URL}/v2/rooms`;
   const options = {
     method: "POST",
     headers: { Authorization: token, "Content-Type": "application/json" },
@@ -39,7 +60,7 @@ export const createMeeting = async ({ token }) => {
 };
 
 export const validateMeeting = async ({ roomId, token }) => {
-  const url = `${API_BASE_URL}/v2/rooms/validate/${roomId}`;
+  const url = `${VIDEO_API_BASE_URL}/v2/rooms/validate/${roomId}`;
 
   const options = {
     method: "GET",
